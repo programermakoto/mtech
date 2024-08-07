@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mテック ブログ</title>
+    <meta name="description" content="HTMLに詳しく特化したレコーズ">
+    <link rel="icon" href="../image/mtech-logo.JPG">
+    <link rel="stylesheet" href="../blog-all-lang.css">
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main>
+        <!-- ブログ記事 -->
+        <div class="blog-container">
+            <div class="box">
+                <h4>Mテック</h4>
+                <h2>target_blankは何気なく使っていたけどセキュリティーすごく大事だった!</h2>
+                <small>2024年08月07日</small>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <h3>背景</h3>
+                <hr>
+                <br>
+                <p>開発環境、サーバー、依存関係のいずれかが侵害された時点でフィッシング攻撃(リンク先ページがリンク元ページの内容を変更し、ユーザーを騙して機密情報（パスワードやクレジットカード情報など）を入力させることがあります。これを「フィッシング」と言います。)、セッションハイジャック(リンク先ページがリンク元ページのセッション情報（例えば、ユーザーがログインしている状態のクッキー情報）にアクセスし、不正に利用することができます。)、クロスサイトスクリプティング（XSS）攻撃(リンク先ページがリンク元ページにスクリプトを挿入し、これを実行させることで、ユーザーの個人情報を盗み出したり、ユーザーの操作を偽装したりすることができます。)をされる可能性があるので<b>rel="noopener noreferrer"</b>を使用します</p>
+                <h3>概要</h3>
+                <hr>
+                <br>
+                <P>target="_blank"は、リンクをクリックしたときにリンク先のページを新しいタブやウィンドウで開くためのHTML属性です。一方、rel="noopener noreferrer"は、新しいタブやウィンドウで開かれたリンク先ページがリンク元ページに対して持つ関係を制御し、セキュリティとプライバシーを強化します。</P>
+                <h3>目的</h3>
+                <hr>
+                <br>
+                <ul>
+                    <li><b>ユーザー体験の向上:</b>リンク先ページを新しいタブやウィンドウで開くことで、ユーザーがリンク元ページに戻りやすくなります。</li>
+                    <li><b>セキュリティの強化:</b>noopenerとnoreferrerを使用することで、リンク先ページがリンク元ページの情報にアクセスすることを防ぎます。</li>
+                </ul>
+                <h3>利用手順</h3>
+                <hr>
+                <br>
+                <h4>1.基本的なリンクの作成</h4>
+                <p>まず、基本的なリンクを作成します。<cord>&lt;a href="https://example.com"&gt;Example&lt;/a&gt;</cord></p>
+                <h4>2.target="_blank"の追加</h4>
+                <p><cord>&lt;a href="https://example.com" target="_blank" &gt;Example&lt;/a&gt;</cord><br>
+                    この属性を追加すると、リンクをクリックしたときにhttps://example.comが新しいタブまたはウィンドウで開きます。</p>
+                <h4>3.セキュリティ強化のためのrel="noopener noreferrer"の追加</h4>
+                <p>リンク先ページがリンク元ページにアクセスするリスクを防ぐために、rel="noopener noreferrer"を追加します。</p>
+                <p><cord>&lt;a href="https://example.com" rel="noopener noreferrer" target="_blank"   &gt;Example&lt;/a&gt;</cord><br>
+                    このように記述することで、リンク先ページがリンク元ページの情報にアクセスすることを防ぎ、セキュリティとプライバシーを強化します。</p>
+                <h3>補足</h3>
+                <hr>
+                <br>
+                <h4>SEOへの影響</h4>
+                <p>一般的に、rel="noopener noreferrer"を使用してもSEOに大きな影響はありません。ただし、リファラー情報が失われるため、リンク元のトラフィックデータが一部失われる可能性があります。</p>      
+                <h3>最後に</h3>
+                <hr>
+                <br>
+                <p>target="_blank"とrel="noopener noreferrer"を適切に使用することで、ユーザー体験を向上させつつ、セキュリティとプライバシーを強化することができます。</p>
+            </div>        
+        </div>
+        <!-- 広告エリア -->
+        <div class="advertisement">
+            <div class="advertisement-box">
+               <a href="https://www.instagram.com/reel/C4nIEqcyxHN/?igsh=eDJwZjM2dWh4OGht" rel="noopener noreferrer" target="_blank"><img src="../image/yuuto.JPG"></a> 
+            </div>
+
+
+            <div class="advertisement-box">
+                <h5>Mtechお問い合わせ</h5>
+                <small>Mtech ブログの問い合わせは公式ラインにて対応しております。
+                    問い合わせは<a href="https://lin.ee/lDqypz5">こちら</a>からお願い致します。
+                </small>
+            </div>
+            
+            <div class="advertisement-box">
+               <a href="https://www.instagram.com/daikou.bb/" rel="noopener noreferrer" target="_blank"><img src="../image/daikouseihon.jpeg"></a> 
+            </div>            
+                  
+
+
+            
+        </div>
+    </main>
+</body>
+
+</html>
