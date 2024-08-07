@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(247, 247, 247); */
+    background-color: rgb(238, 238, 238);
+}
+
+
+/* header */
+
+header {
+    background-image: url(image/mtech-logo.JPG);
+    background-color: rgba(197, 197, 197, 0.503);
+    background-blend-mode: lighten;
+    background-size: contain;
+    width: 100%;
+    height: 70px;
+    /* background-color: #fff; */
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    color: white;
+
+    nav {
+        width: 50%;
+        height: 70px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        height: 70px;
+
+        li {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                height: 70px;
+                width: 100%;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+                transition: all 1s;
+            }
+
+            a:hover {
+                background-color: rgba(255, 255, 255, 0.74);
+                color: black;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2%;
+}
+
+.blog-container {
+    width: 70%;
+    padding: 20px;
+    margin-top: 40px;
+
+    /* 各言語編集位置 */
+    .box {
+        display: block;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        text-decoration: none;
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+/* 広告領域 */
+.advertisement {
+    width: 30%;
+    padding: 20px;
+    height: auto;
+    margin-top: 40px;
+
+    .advertisement-box {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px 0;
+
+        h5 {
+            padding: 10px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:600px) and (max-width:800px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}
+
+
+@media(min-width:391px) and (max-width:599px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}
+
+@media(max-width:390px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
+        h2{
+            font-size: 15px;
+        }
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}

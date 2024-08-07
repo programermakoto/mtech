@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(247, 247, 247); */
+    background-color: rgb(238, 238, 238);
+}
+p {
+    word-break: break-all;
+}
+cord{
+    word-break: break-all;
+}
+
+/* header */
+
+header {
+    background-image: url(image/mtech-logo.JPG);
+    background-color: rgba(197, 197, 197, 0.503);
+    background-blend-mode: lighten;
+    background-size: contain;
+    width: 100%;
+    height: 70px;
+    /* background-color: #fff; */
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+
+
+
+
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 2%;
+}
+
+.blog-container {
+    width: 70%;
+    padding: 20px;
+    margin-top: 40px;
+
+    /* 各言語編集位置 */
+    .box {
+        background-color: #fff;
+        padding: 20px;
+
+        h2 {
+            padding: 10px 0;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        h3 {
+            font-size: 25px;
+            padding: 30px 0 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        h4 {
+            padding: 10px 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* 広告領域 */
+.advertisement {
+    width: 30%;
+    padding: 20px;
+    height: auto;
+    margin-top: 40px;
+
+    .advertisement-box {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px 0;
+
+        h5 {
+            padding: 10px 0;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+}
+
+@media(min-width:600px) and (max-width:800px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+
+
+    .blog-container {
+        width: 100%;
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}
+
+
+@media(min-width:391px) and (max-width:599px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}
+
+@media(max-width:390px) {
+
+    header {
+        width: 100%;
+
+        nav {
+            width: 100%;
+            overflow: auto;
+
+            ul {
+                width: 100%;
+                overflow: auto;
+
+                li {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    /* main */
+    main {
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
+
+        h2 {
+            font-size: 15px;
+        }
+    }
+
+    /* 広告領域 */
+    .advertisement {
+        width: 100%;
+    }
+}
